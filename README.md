@@ -1,9 +1,6 @@
-# yhack2017-mirum-jwt
-This is the mirum-jwt project in YHack2017.
-It will be a web app that analyzes users' voices and texts and converts them into emotions.
+# YHack2017 Tone Analyzer
+This is a web app that allows users input some English texts and analyzes the emotion within the texts with the help of IBM Watson Tone Analyzer API.
 
-____ is a Tweet Sentiment Analyzing tool that plots the public emotions to an event over the past 7 days
+The basic functions are ready to use, but we are still struggling with using Twitter / Facebook's API to get users' post and analyze them.
 
-This web-app incorporates twitter's search api, flask web framework, google firebase
-
-Group member: Zixu (Shawn) Chen, Sid Sawhney, Sashankh Parthasarathy
+Group members: Zixu (Shawn) Chen, Sid Sawhney
