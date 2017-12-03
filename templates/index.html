@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>YHack2017 Tonalyzer</title>
+    <!--Scripts-->
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-firestore.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Styles-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-amber.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Tonalyzer Input</span>
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Tonalyzer</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="https://github.com/shawnchan2014/yhack2017-tonalyzer" target="_blank">GitHub Page</a>
+                <a class="mdl-navigation__link" href="https://www.linkedin.com/in/zixu-chen/" target="_blank">LinkedIn Page</a>
+                <a class="mdl-navigation__link" href="https://www.ibm.com/watson/services/tone-analyzer/" target="_blank">Watson Tone Analyzer</a>
+                <a class="mdl-navigation__link" href="https://firebase.google.com/" target="_blank">Firebase</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div id="input-form" align="center">
+                <form method='POST'>
+                    <div id="textArea" class="mdl-textfield mdl-js-textfield">
+                        <textarea id="text" name="text" class="mdl-textfield__input" type="text" rows="20" maxrows="30"></textarea>
+                        <label class="mdl-textfield__label" for="text">Enter the English text you want to analyze:</label>
+                    </div>
+                    <div id="buttonArea">
+                        <input name="submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"/>
+                    </div>
+                </form>
+            </div>
+    </div>
+    </main>
+    </div>
+</body>
+
+</html>
