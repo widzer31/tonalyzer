@@ -7,6 +7,8 @@ The basic functions are ready to use, but we are still struggling with using Twi
 ## How to use
 To use this web app, simply go to the directory where the project located, input "export FLASK_APP=View.py" and "flask run", and finally open "http://localhost:5000/" in your browser.
 
+Remember to modify the username and password for the ToneAnalyzer!!
+
 ## Sample input
 "YHack2017 is awesome! I really enjoy the event and I hope I can come next time!"
 
